@@ -7,7 +7,43 @@
     <title>Encriptador</title>
 </head>
 <body>
-    <img src="https://www.obsbusiness.school/sites/obsbusiness.school/files/images/encriptar_1.jpg" alt="Imagen de llave en medio de circuitos ambiente azul alucion a encriptar Informacion">
-    
+    <main class="main-container">
+        <section class="logo-section">
+            <img class="alura-logo" src="" alt="Alura logo"/>
+        </section>
+        <section class="input-section">
+            <form>
+                <label for="userText">Ingrese el texto aqui</label>
+                <input type="text" id="userText" name="userText"><br><br>
+              </form>
+              <div class="input-btns-section">
+                  <div class="description-container">
+                    <img class="description-img-input" src="" alt="Info logo"/>
+                    <p class="description-input">Apenas letras minúsculas e sem acento.</p>
+                  </div>
+                <div class="btns-container">
+                    <button id="encrypt-btn" class="main-btn">Encriptar</button>
+                    <button id="decrypt-btn" class="sec-btn">Desencriptar</button>
+                </div>
+              </div>
+        </section>
+        
+
+        <section class="output-section">
+            <div id="not-found-container" class="output-not-found-container">
+                <img class="not-found-img" src="" alt="Not found image"/>
+                <h2 class="title-not-found">Ningún mensaje fue encontrado</h2>
+                <p class="description-not-found">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div id="encrypt-output-container" class="encrypt-output-container">
+                <div id="encrypt-output" class="encrypt-output"></div>
+                <button id="copy-btn" class="sec-btn">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-container">
+        <p class="footer-p">Author: Maria montt</p>
+        <p class="footer-p"><a class="footer-link" href="mailto:mapymy@gmail.com">mapymy@gmail.com</a></p>
+    </footer>
 </body>
 </html>
