@@ -1,0 +1,22 @@
+body {
+    background-color: #F3F5FC;
+}
+.main-container {
+    padding: 40px;
+    display: flex;
+    width: 100%;
+}
+.logo-section {
+    width: 100%;
+    padding-left: 44px;
+    min-width: 240px;
+}
+.alura-logo {
+    max-height: 48px;
+}
+.input-section {
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
