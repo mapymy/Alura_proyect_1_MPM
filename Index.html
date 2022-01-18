@@ -4,30 +4,33 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>Encriptador</title>
 </head>
 <body>
     <main class="main-container">
-        <section class="logo-section">
+        <section class="section logo-section">
             <img class="alura-logo" src="https://mapymy.github.io/assets/logo.svg" alt="Alura logo"/>
         </section>
-        <section class="input-section">
-            <form>
-                <label for="userText">Ingrese el texto aqui</label>
-                <input type="text" id="userText" name="userText"><br><br>
+        <section class="section input-section">
+            <form class="form-input">
+                <textarea class="input-text" rows="4" cols="50" id="userText" placeholder="Ingrese el texto aqui" name="userText"></textarea>
             </form>
             <div class="input-btns-section">
                 <div class="description-container">
-                <img class="description-img-input" src="https://mapymy.github.io/assets/Info.svg" alt="Info logo"/>
-                <p class="description-input">Apenas letras minúsculas e sem acento.</p>
+                    <img class="description-img-input" src="https://mapymy.github.io/assets/Info.svg" alt="Info logo"/>
+                    <p class="description-input">Solo letras minúsculas y sin acentos</p>
                 </div>
-            <div class="btns-container">
-                <button id="encrypt-btn" class="main-btn">Encriptar</button>
-                <button id="decrypt-btn" class="sec-btn">Desencriptar</button>
-            </div>
+                <div class="btns-container">
+                    <button id="encrypt-btn" class="btn main-btn">Encriptar</button>
+                    <button id="decrypt-btn" class="btn sec-btn">Desencriptar</button>
+                </div>
             </div>
         </section>
-        <section class="output-section">
+        <section class="section output-section">
             <div id="not-found-container" class="output-not-found-container">
                 <img class="not-found-img" src="https://mapymy.github.io/assets/Mu%C3%B1eco.svg" alt="Not found image"/>
                 <h2 class="title-not-found">Ningún mensaje fue encontrado</h2>
@@ -35,12 +38,12 @@
             </div>
             <div id="encrypt-output-container" class="encrypt-output-container">
                 <div id="encrypt-output" class="encrypt-output"></div>
-                <button id="copy-btn" class="sec-btn">Copiar</button>
+                <button id="copy-btn" class="btn sec-btn">Copiar</button>
             </div>
         </section>
     </main>
     <footer class="footer-container">
-        <p class="footer-p">Author: Maria montt</p>
+        <p class="footer-p">Hecho por Maria montt</p>
         <p class="footer-p"><a class="footer-link" href="mailto:mapymy@gmail.com">mapymy@gmail.com</a></p>
     </footer>
 </body>

@@ -1,15 +1,69 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body{min-height:100%;}
+body{height:100vh;}
+
+:root {
+    font-family: 'Inter', sans-serif;
+}
 body {
     background-color: #F3F5FC;
+}
+.section {
+    width: 100%;
 }
 .main-container {
     padding: 40px;
     display: flex;
     width: 100%;
+    height: 100%;
+    gap: 80px;
 }
 .logo-section {
     width: 100%;
     padding-left: 44px;
-    min-width: 240px;
+    max-width: 240px;
 }
 .alura-logo {
     max-height: 48px;
@@ -19,4 +73,123 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+.form-input {
+    height: 100%;
+    margin-top: 168px;
+}
+
+.input-text {
+    color: #0A3871;
+    background-color: transparent;
+    border: none;
+    outline:none;
+    font-size: 32px;
+    line-height: 48px;
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+}
+.input-text::placeholder {
+    color: #0A3871;
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+.description-container {
+    display: flex;
+    align-content: center;
+    margin: 16px 0;
+}
+
+.description-img-input{
+    margin-right: 8px;
+    max-height: 16px;
+}
+
+.description-input{
+    margin: 0;
+    color: #495057;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.btns-container {
+    display: flex;
+    gap: 24px;
+    align-content: center;
+}
+
+.btn {
+    border-radius: 24px;
+    padding: 24px;
+    max-height: 67px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 19.36px;
+}
+.main-btn{
+    background: #0A3871;
+    color:#FFFFFF;
+    border: none;
+}
+.sec-btn {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+.output-section {
+    max-width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    padding: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.output-not-found-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.title-not-found {
+    font-weight: 700px;
+    font-size: 24px;
+    line-height: 28.8px;
+    margin: 16px auto;
+    text-align: center;
+    max-width: 336px;
+}
+
+.description-not-found {
+    color: #495057;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 336px;
+    margin: 0 auto;
+}
+.footer-container {
+    display: inline;
+}
+.footer-p {
+    color: #0A3871;
+    font-size: 12px;
+    margin: 10px 30px;
+    display: inline;
+}
+.footer-link {
+    display: inline;
+    color: #0A3871;
+    text-decoration: none;
 }
