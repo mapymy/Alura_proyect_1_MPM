@@ -4,17 +4,17 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>Encriptador</title>
+    <script defer type="text/javascript" src="index.js"></script>
 </head>
 <body>
-    <main>
-        <div class="main-container">
-
-        
+    
+    <div class="main-container">
         <section class="section logo-section">
             <img class="alura-logo" src="https://mapymy.github.io/assets/logo.svg" alt="Alura logo"/>
         </section>
@@ -28,8 +28,8 @@
                     <p class="description-input">Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="btns-container">
-                    <button id="encrypt-btn" class="btn main-btn">Encriptar</button>
-                    <button id="decrypt-btn" class="btn sec-btn">Desencriptar</button>
+                    <button id="encrypt-btn" class="btn main-btn" onclick="encrypt()">Encriptar</button>
+                    <button id="decrypt-btn" class="btn sec-btn" onclick="decrypt()">Desencriptar</button>
                 </div>
             </div>
         </section>
@@ -40,12 +40,12 @@
                 <p class="description-not-found">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
             <div id="encrypt-output-container" class="encrypt-output-container">
-                <div id="encrypt-output" class="encrypt-output"></div>
-                <button id="copy-btn" class="btn sec-btn">Copiar</button>
+                <textarea class="output-text" rows="4" readonly cols="50" id="encrypt-output" name="encryptOutput"></textarea>
+                <button id="copy-btn" class="btn sec-btn cp-btn" onclick="copyText()">Copiar</button>
             </div>
         </section>
     </div>
-    </main>
+    
     <footer class="footer-container">
         <p class="footer-p">Hecho por Maria montt</p>
         <p class="footer-p"><a class="footer-link" href="mailto:mapymy@gmail.com">mapymy@gmail.com</a></p>
