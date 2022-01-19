@@ -28,8 +28,8 @@
                     <p class="description-input">Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="btns-container">
-                    <button id="encrypt-btn" class="btn main-btn" onclick="encrypt()">Encriptar</button>
-                    <button id="decrypt-btn" class="btn sec-btn" onclick="decrypt()">Desencriptar</button>
+                    <button id="encrypt-btn" class="btn main-btn" onclick="encrypt()" ontouchend="encrypt()">Encriptar</button>
+                    <button id="decrypt-btn" class="btn sec-btn" onclick="decrypt()" ontouchend="decrypt()">Desencriptar</button>
                 </div>
             </div>
         </section>
@@ -41,7 +41,7 @@
             </div>
             <div id="encrypt-output-container" class="encrypt-output-container">
                 <textarea class="output-text" rows="4" readonly cols="50" id="encrypt-output" name="encryptOutput"></textarea>
-                <button id="copy-btn" class="btn sec-btn cp-btn" onclick="copyText()">Copiar</button>
+                <button id="copy-btn" class="btn sec-btn cp-btn" onclick="copyText()" ontouchend="copyText()">Copiar</button>
             </div>
         </section>
     </div>
